@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun  8 11:58:00 2022
+# Make data base, printed on Wed Jun  8 19:27:14 2022
 
 # Variables
 
@@ -33,7 +33,7 @@ rvm_path = /home/gitpod/.rvm
 # environment
 SUPERVISOR_ADDR = localhost:22999
 # environment
-SUPERVISOR_ENVVAR_OTS = https://gitpod.io/api/ots/get/1950d73f-7d47-4b5b-a926-21e212ddd4c6
+SUPERVISOR_ENVVAR_OTS = https://gitpod.io/api/ots/get/db2d76d6-9757-4521-9000-fdab57a7e788
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
@@ -105,7 +105,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-905eedaa-1303-4739-bbe7-415c39aab998.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-43db9d91-97cc-4cbf-869f-7d291ff412e3.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -149,7 +149,7 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # makefile (from 'Makefile', line 8)
 steps = 1
 # environment
-GITPOD_CLI_APITOKEN = bFoszmemmAFopafEp18caZfrPn9HVY7c
+GITPOD_CLI_APITOKEN = Jj3PvD5586MZjHAIN_j5CtUlpjZT4rEG
 # automatic
 +F = $(notdir $+)
 # environment
@@ -217,7 +217,7 @@ GITPOD_PREVENT_METADATA_ACCESS = true
 # environment
 GITPOD_HOST = https://gitpod.io
 # makefile (from 'Makefile', line 3)
-seed = dummy
+seed = dummy-data
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -279,7 +279,7 @@ NGINX_DOCROOT_IN_REPO = public
 # environment
 rvm_loaded_flag = 1
 # environment
-GITPOD_INSTANCE_ID = b45b97bd-4707-4068-8992-6dc655fc673b
+GITPOD_INSTANCE_ID = 86005d8f-cd7d-4896-a1b5-6dd68f532828
 # environment
 GITPOD_WORKSPACE_URL = https://eredoqo-chatroomapp-qdi9nfnsqog.ws-eu47.gitpod.io
 # default
@@ -301,9 +301,9 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 
 # Directories
 
-# . (device 2346, inode 1476407494): 10 files, no impossibilities.
+# . (device 2346, inode 135131536): 9 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -348,6 +348,7 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
+ 
 migrate-create:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -359,12 +360,12 @@ migrate-create:
 		--down-sql "SELECT NOW();" \
 		--database-name default \
 		--project hasura-ecomm
-	@hasura migrate apply --project hasura-ecomm --database-name default
+	#@hasura migrate apply --project hasura-ecomm --database-name default
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-08 10:51:37.070094026
+#  Last modified 2022-06-08 12:55:05
 #  File has been updated.
 #  Successfully updated.
 
@@ -451,13 +452,12 @@ migrate-status:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 29 / storage = 272 B / avg = 9 B
-# current buf: size = 8162 B / used = 272 B / count = 29 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 28 / storage = 258 B / avg = 9 B
+# current buf: size = 8162 B / used = 258 B / count = 28 / avg = 9 B
 
-# strcache performance: lookups = 53 / hit rate = 45%
+# strcache performance: lookups = 52 / hit rate = 46%
 # hash-table stats:
- 
-# Load=29/8192=0%, Rehash=0, Collisions=1/53=2%
-# Finished Make data base on Wed Jun  8 11:58:00 2022
+# Load=28/8192=0%, Rehash=0, Collisions=1/52=2%
+# Finished Make data base on Wed Jun  8 19:27:14 2022
 
  
