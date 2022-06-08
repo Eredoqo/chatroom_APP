@@ -1,6 +1,6 @@
 # HASURA SEED SOURCE
 # it is used in the
-seed?=dummy
+seed?=dummy-data
 
 # HASURA MIGRATION STEPS
 # it is used in the hasura postgres migration scripts to control
@@ -79,4 +79,4 @@ migrate-create:
 		--down-sql "SELECT NOW();" \
 		--database-name default \
 		--project hasura-ecomm
-	@hasura migrate apply --project hasura-ecomm --database-name default
+	#@hasura migrate apply --project hasura-ecomm --database-name default
