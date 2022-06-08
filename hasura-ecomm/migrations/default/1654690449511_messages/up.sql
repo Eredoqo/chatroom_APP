@@ -7,8 +7,6 @@ CREATE TABLE "public"."messages" (
   CONSTRAINT "messages_pkey" PRIMARY KEY ("id")
 );
 
-
-
 ALTER TABLE ONLY "public"."messages"
 ADD CONSTRAINT "messages_room_id_fkey"
 FOREIGN KEY (room_id) REFERENCES rooms(id)
