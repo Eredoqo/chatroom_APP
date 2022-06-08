@@ -15,9 +15,9 @@ INSERT INTO "public"."rooms"
 SELECT
   CONCAT('r', "p") AS "id",
 
-  CONCAT('u', floor(random() * (30 - 1 + 1) + 1)) AS "user_id"
+  CONCAT('u', floor(random() * (10 - 1 + 1) + 1)) AS "user_id"
 
-FROM generate_series(1, 100) AS "p"
+FROM generate_series(1, 500) AS "p"
 
 ON CONFLICT ON CONSTRAINT "rooms_pkey"
 DO UPDATE SET
