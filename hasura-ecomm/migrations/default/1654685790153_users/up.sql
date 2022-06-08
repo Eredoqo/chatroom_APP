@@ -1,3 +1,3 @@
-   CREATE TABLE IF NOT EXIST "users"  (
+   CREATE TABLE IF NOT EXISTS"users"  (
        "id"SERIAL PRIMARY KEY
    );
