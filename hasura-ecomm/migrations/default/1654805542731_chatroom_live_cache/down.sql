@@ -1,1 +1,1 @@
-SELECT NOW();
+DROP TABLE IF EXISTS "public"."chatroom_live_cache";
